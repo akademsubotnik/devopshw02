@@ -7,4 +7,5 @@
 
 $ansible all -m ping
 $ansible all -m yum -a "name=nginx state=latest"
-$ansible all -m
+$ansible all -m service "name=nginx state=started enabled=yes"
+$ansible all -m user 
