@@ -1,0 +1,10 @@
+#just using ansible modules for q. 2
+#    2) _Using Ansible Modules_:
+#        Use the **ping** module to check the connectivity of your servers.
+#        Use the **apt** or yum module (depending on the OS) to install nginx on both servers.
+#        Use the **service** module to ensure that nginx is running and enabled at boot.
+#        Use the **user** module to create a user named webadmin on both servers.
+
+$ansible all -m ping
+$ansible all -m yum -a "name=nginx state=latest"
+$ansible all -m
