@@ -1,0 +1,20 @@
+# 5) **Putting it All Together**:
+#        * Write a playbook named _setup-web.yml_ that:
+#            * Uses the _web-servers.ini_ inventory.
+#            * Applies the _nginx_setup_ role to both servers.
+#            * Ensures that after execution, visiting the IP address of the servers on a browser shows the web page content defined in your variable.
+#
+---
+  - name: Setup web page on nginx hosts
+    hosts: all
+    become: yes
+    become_user: root
+    tasks:
+      - name: ensure apache is at the latest version
+        yum:
+          name: httpd
+          state: latest
+      - name: ensure apache is running
+        service:
+          name: httpd
+          state: started
