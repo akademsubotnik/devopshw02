@@ -6,8 +6,7 @@
 #        Use the **service** module to ensure that nginx is running and enabled at boot.
 
 
-$ansible all -m ping
-$ansible all -m user -a "name=webadmin state=present" 
-$ansible all -m yum -a "name=nginx state=latest"
-$ansible all -m service "name=nginx state=started enabled=yes"
-
+$ansible -i _web-servers.ini -m ping all
+$ansible -i _web-servers.ini -m user -a "name=webadmin state=present" all
+$ansible -i _web-servers.ini -m yum -a "name=nginx state=latest" all
+$ansible -i _web-servers.ini -m service "name=nginx state=started enabled=yes" all
