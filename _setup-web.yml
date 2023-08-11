@@ -9,5 +9,6 @@
     hosts: all
     become: yes
     become_user: root
-    tasks:
-    #call the role you created ./nginx_setup/tasks/main.yml
+    roles:
+      - role: 'nginx_setup/tasks/main.yml'
+    #tasks:
