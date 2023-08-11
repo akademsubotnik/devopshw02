@@ -1,6 +1,6 @@
 #        Inside the role, you should have tasks that:
-#        * Configure the nginx to serve a static webpage.
-#        * Ensure the necessary directories are present for the webpage.
+#        DONE * Configure the nginx to serve a static webpage.
+#        DONE * Ensure the necessary directories are present for the webpage.
 #        * Copy a sample index.html to the appropriate directory on the server.
 #        * Update your role tasks to use the template module to generate the index.html page from a template, replacing some content with the web_page_content variable.
 ---
