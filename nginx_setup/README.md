@@ -5,6 +5,7 @@ nginx_setup
         1. Configure nginx to serve a static webpage
         2. Ensure the necessary directories are present for the webpage
         3. Copy a sample index.html to the appropriate directory on the server
+        NOTE step 3 may use a variable from the ./vars/main.yml file instead of a sample.index.html file.  You can change the variable value to change the webpage
 
 Requirements
 ------------
