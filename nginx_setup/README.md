@@ -1,22 +1,25 @@
-Role Name
+nginx_setup
 =========
 
-A brief description of the role goes here.
+This role will :
+    1. Configure nginx to serve a static webpage
+    2. Ensure the necessary directories are present for the webpage
+    3. Copy a sample index.html to the appropriate directory on the server
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+Have ansible setup on hosts you want to run this role on.  It should run like any other role.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+This role uses 1 variable, in ./vars/main.yml , named _web_page_content.  This variable has the html content that is shown on the webpage
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+No dependencies
 
 Example Playbook
 ----------------
@@ -34,5 +37,6 @@ BSD
 
 Author Information
 ------------------
+Greg Smith
++380 97 546 5994
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
