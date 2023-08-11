@@ -8,7 +8,7 @@ which includes installing and configuring a web server, creating a user, and ens
 **Task Description**:
 
     ~~1) _Setup your Inventory_:~~
-        Create an inventory file named _web-servers.ini_.
+        ~~Create~~ an inventory file named _web-servers.ini_.
         Add at least two server entries: _web-server1_ and _web-server2_.
         Define their IP addresses and SSH access details.
 
