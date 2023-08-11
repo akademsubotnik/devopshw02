@@ -1,10 +1,10 @@
 nginx_setup
 =========
 
-This role will :
-    1. Configure nginx to serve a static webpage
-    2. Ensure the necessary directories are present for the webpage
-    3. Copy a sample index.html to the appropriate directory on the server
+    This role will :
+        1. Configure nginx to serve a static webpage
+        2. Ensure the necessary directories are present for the webpage
+        3. Copy a sample index.html to the appropriate directory on the server
 
 Requirements
 ------------
