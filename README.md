@@ -7,12 +7,12 @@ which includes installing and configuring a web server, creating a user, and ens
 
 **Task Description**:
 
-    ~~1) _Setup your Inventory_:~~
-        ~~Create~~ an inventory file named _web-servers.ini_.
+    DONE 1) _Setup your Inventory_:
+        Create an inventory file named _web-servers.ini_.
         Add at least two server entries: _web-server1_ and _web-server2_.
         Define their IP addresses and SSH access details.
 
-    2) _Using Ansible Modules_:
+    DONE 2) _Using Ansible Modules_:
         Use the **ping** module to check the connectivity of your servers.
         Use the **user** module to create a user named webadmin on both servers.
         Use the **apt** or yum module (depending on the OS) to install nginx on both servers.
