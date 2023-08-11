@@ -25,3 +25,6 @@
 
 #I think you will need to use jinja templates for this
 - name: Use template module to generate index.html from a template, replacing some content with the web_page_content variable
+  template:
+   src: genhtml_template.j2
+   dest: /var/web/html/index.html
