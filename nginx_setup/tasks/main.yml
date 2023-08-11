@@ -5,9 +5,17 @@
 #        * Update your role tasks to use the template module to generate the index.html page from a template, replacing some content with the web_page_content variable.
 ---
 # tasks file for nginx_setup
- name: (NGINX) Install Nginx Web server
-  package:
-    name: "{{ item }}"
-    state: latest
-  with_items:
-    - nginx
+ - name: (NGINX) Install Nginx Web server
+   package:
+     name: "{{ item }}"
+     state: latest
+   with_items:
+     - nginx
+
+- name: Start and enable the nginx service
+  service: 
+  name: nginx
+  enabled: yes
+  state: started
+
+  
