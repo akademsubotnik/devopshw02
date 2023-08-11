@@ -1,7 +1,7 @@
 #        Inside the role, you should have tasks that:
 #        DONE * Configure the nginx to serve a static webpage.
 #        DONE * Ensure the necessary directories are present for the webpage.
-#        * Copy a sample index.html to the appropriate directory on the server.
+#        DONE * Copy a sample index.html to the appropriate directory on the server.
 #        * Update your role tasks to use the template module to generate the index.html page from a template, replacing some content with the web_page_content variable.
 ---
 # tasks file for nginx_setup
@@ -18,4 +18,7 @@
   enabled: yes
   state: started
 
-  
+- name: Copy sample index file to the appropriate directory on the server
+  copy:
+   src: /srv/myfiles/sample.index.html
+   dest: /var/web/html/index.html
