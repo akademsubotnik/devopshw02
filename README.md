@@ -19,7 +19,7 @@ which includes installing and configuring a web server, creating a user, and ens
         Use the **service** module to ensure that nginx is running and enabled at boot.
 
     3) _Create a Role for Web Server Configuration_:
-        Create a role named nginx_setup.
+        DONE Create a role named nginx_setup.
         Inside the role, you should have tasks that:
             * Configure the nginx to serve a static webpage.
             * Ensure the necessary directories are present for the webpage.
