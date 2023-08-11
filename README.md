@@ -7,10 +7,10 @@ which includes installing and configuring a web server, creating a user, and ens
 
 **Task Description**:
 
-    <del>1) _Setup your Inventory_:
+    ~~1) _Setup your Inventory_:~~
         Create an inventory file named _web-servers.ini_.
         Add at least two server entries: _web-server1_ and _web-server2_.
-        Define their IP addresses and SSH access details.</del>
+        Define their IP addresses and SSH access details.
 
     2) _Using Ansible Modules_:
         Use the **ping** module to check the connectivity of your servers.
