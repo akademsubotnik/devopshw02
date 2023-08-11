@@ -2,5 +2,12 @@
 #        * Configure the nginx to serve a static webpage.
 #        * Ensure the necessary directories are present for the webpage.
 #        * Copy a sample index.html to the appropriate directory on the server.
+#        * Update your role tasks to use the template module to generate the index.html page from a template, replacing some content with the web_page_content variable.
 ---
 # tasks file for nginx_setup
+ name: (NGINX) Install Nginx Web server
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - nginx
