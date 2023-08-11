@@ -24,11 +24,13 @@ which includes installing and configuring a web server, creating a user, and ens
             * Configure the nginx to serve a static webpage.
             * Ensure the necessary directories are present for the webpage.
             * Copy a sample index.html to the appropriate directory on the server.
+            * Update your role tasks to use the template module to generate the index.html page from a template, replacing some content with the web_page_content variable.
 
-    4) _Using Variables_:
+
+    DONE 4) _Using Variables_:
         Create a _vars/main.yml_ file inside the _nginx_setup_ role.
         Define a variable named _web_page_content_ and assign some HTML content to it.
-        Update your role tasks to use the template module to generate the index.html page from a template, replacing some content with the web_page_content variable.
+
 
     DONE 5) **Putting it All Together**:
         * Write a playbook named _setup-web.yml_ that:
