@@ -22,3 +22,5 @@
   copy:
    src: /srv/myfiles/sample.index.html
    dest: /var/web/html/index.html
+
+- name: Use template module to generate index.html from a template, replacing some content with the web_page_content variable
