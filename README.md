@@ -30,7 +30,7 @@ which includes installing and configuring a web server, creating a user, and ens
         Define a variable named _web_page_content_ and assign some HTML content to it.
         Update your role tasks to use the template module to generate the index.html page from a template, replacing some content with the web_page_content variable.
 
-    5) **Putting it All Together**:
+    DONE 5) **Putting it All Together**:
         * Write a playbook named _setup-web.yml_ that:
             * Uses the _web-servers.ini_ inventory.
             * Applies the _nginx_setup_ role to both servers.
